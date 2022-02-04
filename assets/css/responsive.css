@@ -1,7 +1,47 @@
+@media (max-width: 1440px) {
+    /* page wrapper */
+    .main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media (max-width: 1200px) {
+    /* about page */
+    .section-header__title {
+        font-size: 50px;
+    }
+    
+    .section-header {
+        padding-bottom: 80px;
+    }
+    
+    .section-description,
+    .email-contact,
+    .img-box {
+        margin-bottom: 80px;
+    }
+    
+    .email-contact__header {
+        font-size: 25px;
+    }
+    
+    .email-contact__email {
+        font-size: 50px;
+    }
+    
+    .team .section-header__title {
+        padding-bottom: 50px;
+    }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
     /* header css */
     a.header-nav__item--link {
         padding: 0 35px;
+    }
+    /* page wrapper */
+    .main {
+        padding-left: 13%;
+        padding-right: 13%;
     }
 }
 
@@ -48,6 +88,34 @@
     h1.banner-inner__text {
         font-size: 35px;
     }
+    /* page wrapper */
+    .main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* about page */
+    .section-header__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* about page */
+    .section-description {
+        column-count: 1;
+        text-align: center;
+    }
+    .section-description p {
+        margin-bottom: 30px;
+    }
+    
+    .email-contact__email {
+        font-size: 25px;
+    }
+    
+    .email-contact__header {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -58,5 +126,15 @@
     /* banner css */
     h1.banner-inner__text {
         font-size: 30px;
+    }
+    /* about page */
+    .email-contact__header {
+        font-size: 18px;
+    }
+    .team-list-box {
+        margin-bottom: 35px;
+    }
+    .team-member-name {
+        font-size: 17px;
     }
 }

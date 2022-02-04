@@ -5,7 +5,8 @@
 
     01. Theme default CSS	
     02. Header CSS
-    03. Banner CSSS
+    03. Banner CSS
+    04. About page CSS
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -45,6 +46,28 @@
        url('../fonts/helveticaneue_medium-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'helveticaneueregular';
+  src: url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
+       url('../fonts/helveticaneue-webfont.woff') format('woff'),
+       url('../fonts/helveticaneue-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'helveticaregular';
+  src: url('../fonts/helvetica-webfont.woff2') format('woff2'),
+       url('../fonts/helvetica-webfont.woff') format('woff'),
+       url('../fonts/helvetica-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 /* box sizing */
@@ -133,6 +156,7 @@ p {
   font-family: var(--theme-primary-font);
   font-size: 16px;
   font-weight: normal;
+  margin: 0;
 }
 
 hr {
@@ -195,13 +219,13 @@ label {
   position: absolute; }
 
 /* text color class */
-.text-primary {
+.text-primary-color {
     color: var(--theme-primary-color);
 }
-.text-secondary {
+.text-secondary-color {
     color: var(--theme-secondary-color);
 }
-.text-tertiary {
+.text-tertiary-color {
     color: var(--theme-secondary-light);
 }
 /* background color class */
@@ -266,6 +290,18 @@ label {
 @media (min-width:1200px){
   .container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1170px}
 }
+@media (min-width:1500px){
+  .container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1270px}
+}
+
+.main {
+  padding-top: 200px;
+}
+.page-wrapper {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 /*----------------------------------------*/
 /*  02. Header CSSS
@@ -293,18 +329,24 @@ a.header-nav__item--link {
   font-family: 'helveticabold', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   letter-spacing: 2px;
 }
 .header-nav__list li:last-child a {
   padding-right: 0;
 }
+
+.home a.header-nav__item--link {
+  color: #fff;
+}
+
 .mobile-menu,
 .toggle-menu {
   display: none;
 }
+
 /*----------------------------------------*/
-/*  03. Banner CSSS
+/*  03. Banner CSS
 /*----------------------------------------*/
 section.banner {
   width: 100vw;
@@ -330,4 +372,83 @@ h1.banner-inner__text {
   font-size: 50px;
   color: #fff;
   text-align: center;
+}
+
+/*----------------------------------------*/
+/*  04. About page CSS
+/*----------------------------------------*/
+.section-header {
+  padding-bottom: 120px;
+}
+.section-header__title {
+  font-family: 'helveticaneuebold', sans-serif;
+  font-size: 75px;
+}
+.section-description {
+  column-width: inherit;
+  column-count: 2;
+  column-gap: 7%;
+  margin-bottom: 120px;
+}
+
+.section-description p {
+  margin-bottom: 55px;
+  font-family: 'helveticaneue', sans-serif;
+  line-height: 35px;
+}
+
+.section-description p:last-child {
+  margin-bottom: 0;
+}
+
+.email-contact {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.email-contact__header {
+  font-size: 30px;
+  font-family: 'helveticaneuebold',sans-serif;
+  margin-bottom: 40px;
+  line-height: 35px;
+}
+
+.email-contact__email {
+  font-size: 70px;
+  font-family: 'helveticabold';
+}
+
+.team .section-header__title {
+  padding-bottom: 80px;
+}
+.team-list .row {
+  padding-top: 30px;
+  border-top: 1px solid #CED2D5;
+}
+
+.team-list-box {
+  margin-bottom: 65px;
+}
+.team-member-name {
+  font-family: 'helveticaneuemedium', sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.team-member-designation {
+  font-family: 'helveticaregular';
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.team-member-bio {
+  font-family: 'helveticaneuemedium', sans-serif;
+  font-size: 16px;
+  line-height: 45px;
+}
+.img-box {
+  margin-bottom: 120px;
 }
