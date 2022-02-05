@@ -1,6 +1,12 @@
 @media (max-width: 1440px) {
     /* page wrapper */
     .main {
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .main {
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -96,6 +102,11 @@
     /* about page */
     .section-header__title {
         text-align: center;
+    }
+    /* bio page */
+    .section-header__left {
+        position: relative;
+        left: 10%;
     }
 }
 

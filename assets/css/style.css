@@ -7,6 +7,7 @@
     02. Header CSS
     03. Banner CSS
     04. About page CSS
+    05. Bio page CSS
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -94,8 +95,8 @@
     --theme-fs-xs: 16px;
     --theme-fs-s: 18px;
     --theme-fs-m: 22px;
-    --theme-fs-l: 24px;
-    --theme-fs-xl: 36px;
+    --theme-fs-l: 50px;
+    --theme-fs-xl: 75px;
 }
 body {
   font-family: var(--theme-primary-font) !important;
@@ -226,7 +227,7 @@ label {
     color: var(--theme-secondary-color);
 }
 .text-tertiary-color {
-    color: var(--theme-secondary-light);
+    color: var(--theme-tertiary-color);
 }
 /* background color class */
 
@@ -335,7 +336,20 @@ a.header-nav__item--link {
 .header-nav__list li:last-child a {
   padding-right: 0;
 }
+a.header-nav__item--link.active {
+  position: relative;
+}
 
+a.header-nav__item--link.active:before {
+  content: '';
+  width: 23%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .home a.header-nav__item--link {
   color: #fff;
 }
@@ -369,7 +383,6 @@ section.banner .row {
 
 h1.banner-inner__text {
   font-family: 'helveticabold', sans-serif;
-  font-size: 50px;
   color: #fff;
   text-align: center;
 }
@@ -382,7 +395,6 @@ h1.banner-inner__text {
 }
 .section-header__title {
   font-family: 'helveticaneuebold', sans-serif;
-  font-size: 75px;
 }
 .section-description {
   column-width: inherit;
@@ -440,15 +452,33 @@ h1.banner-inner__text {
 
 .team-member-designation {
   font-family: 'helveticaregular';
-  font-size: 16px;
   line-height: 30px;
 }
 
 .team-member-bio {
   font-family: 'helveticaneuemedium', sans-serif;
-  font-size: 16px;
   line-height: 45px;
 }
 .img-box {
   margin-bottom: 120px;
+}
+
+/*----------------------------------------*/
+/*  05. Bio page CSS
+/*----------------------------------------*/
+.section-header__title.line {
+  position: relative;
+}
+.section-header__title.line::before {
+  content: '';
+  width: 12%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: -14%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section-header__left .team-member-designation {
+  margin-top: 10px;
 }
