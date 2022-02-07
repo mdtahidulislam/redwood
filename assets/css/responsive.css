@@ -134,6 +134,11 @@
     .email-contact__header {
         font-size: 20px;
     }
+
+    /* portfolio page */
+    .portfolio-item-box__title {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 600px) {

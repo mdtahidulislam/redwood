@@ -8,6 +8,7 @@
     03. Banner CSS
     04. About page CSS
     05. Bio page CSS
+    06. Portfolio page CSS
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -517,4 +518,41 @@ h1.banner-inner__text {
 }
 .bio--description p {
   font-size: 18px;
+}
+
+/*----------------------------------------*/
+/*  06. Portfolio page CSS
+/*----------------------------------------*/
+.portfolio--wrapper {
+  max-width: 87%;
+}
+
+.portfolio--header {
+  padding-bottom: 80px;
+}
+
+.portfolio-items {
+  margin-bottom: 43px;
+}
+
+.portfolio-item-box {
+  margin-bottom: 57px;
+}
+
+.portfolio-item-box__img {
+  margin-bottom: 20px;
+}
+
+.portfolio-item-box__img img {
+  width: 100%;
+}
+
+.portfolio-item-box__title {
+  font-size: 20px;
+  font-family: 'helveticaneuemedium',sans-serif;
+  margin-bottom: 15px;
+}
+
+.portfolio-item-box__subtitle {
+  font-family: 'helvetica',sans-serif;
 }
