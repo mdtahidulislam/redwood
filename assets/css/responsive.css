@@ -1,15 +1,15 @@
 @media (max-width: 1440px) {
     /* page wrapper */
-    .main {
+    /* .main {
         padding-left: 16%;
         padding-right: 16%;
-    }
+    } */
 }
 @media (min-width: 1200px) and (max-width: 1365px) {
-    .main {
+    /* .main {
         padding-left: 10%;
         padding-right: 10%;
-    }
+    } */
 }
 @media (max-width: 1200px) {
     /* about page */
@@ -45,10 +45,10 @@
         padding: 0 35px;
     }
     /* page wrapper */
-    .main {
+    /* .main {
         padding-left: 13%;
         padding-right: 13%;
-    }
+    } */
 }
 
 @media (max-width: 991px) {
@@ -95,19 +95,19 @@
         font-size: 35px;
     }
     /* page wrapper */
-    .main {
+    /* .main {
         padding-left: 0;
         padding-right: 0;
-    }
+    } */
     /* about page */
     .section-header__title {
         text-align: center;
     }
     /* bio page */
-    .section-header__left {
+    /* .section-header__left {
         position: relative;
         left: 10%;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
