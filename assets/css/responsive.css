@@ -13,10 +13,6 @@
 }
 @media (max-width: 1200px) {
     /* about page */
-    .section-header__title {
-        font-size: 50px;
-    }
-    
     .section-header {
         padding-bottom: 80px;
     }
@@ -49,6 +45,13 @@
         padding-left: 13%;
         padding-right: 13%;
     } */
+    .section-header__title {
+        font-size: 40px;
+    }
+    /* bio page */
+    .team-member-designation {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -102,12 +105,16 @@
     /* about page */
     .section-header__title {
         text-align: center;
+        font-size: 30px;
     }
     /* bio page */
     /* .section-header__left {
         position: relative;
         left: 10%;
     } */
+    .team-member-designation {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -138,6 +145,9 @@
     h1.banner-inner__text {
         font-size: 30px;
     }
+    .page-wrapper {
+        max-width: 100%;
+    }
     /* about page */
     .email-contact__header {
         font-size: 18px;
@@ -147,5 +157,18 @@
     }
     .team-member-name {
         font-size: 17px;
+    }
+    /* bio page */
+    .section-header__title {
+        font-size: 25px;
+    }
+    .back i {
+        font-size: 14px;
+    }
+    .bio--header-left {
+        margin-left: 22px;
+    }
+    .bio--description {
+        max-width: 100%;
     }
 }

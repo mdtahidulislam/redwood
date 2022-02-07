@@ -459,6 +459,19 @@ h1.banner-inner__text {
   font-family: 'helveticaneuemedium', sans-serif;
   line-height: 45px;
 }
+
+.team-member-bio::after {
+  content: '\f063';
+  font-family: Fontawesome;
+  margin-left: 10px;
+  font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+}
+.team-member-bio:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
 .img-box {
   margin-bottom: 120px;
 }
@@ -481,4 +494,27 @@ h1.banner-inner__text {
 }
 .section-header__left .team-member-designation {
   margin-top: 10px;
+}
+.back {
+  display: flex;
+  align-items: center;
+}
+.back i {
+  font-size: 18px;
+}
+.back span {
+  font-family: 'helveticabold';
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-left: 7px;
+}
+.bio--description {
+  max-width: 76%;
+  width: 100%;
+  margin: 0 auto;
+  column-count: 1;
+  margin-bottom: 100px;
+}
+.bio--description p {
+  font-size: 18px;
 }
