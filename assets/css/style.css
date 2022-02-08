@@ -9,6 +9,7 @@
     04. About page CSS
     05. Bio page CSS
     06. Portfolio page CSS
+    07. Locations page CSS
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -230,6 +231,9 @@ label {
 .text-tertiary-color {
     color: var(--theme-tertiary-color);
 }
+.text-fourth-color {
+    color: var(--theme-fourth-color);
+}
 /* background color class */
 
 /* font size class */
@@ -325,7 +329,7 @@ header.header {
 .header-menu {
   flex: 1;
 }
-a.header-nav__item--link {
+.header-nav__item--link {
   display: inline-block;
   padding: 0 60px;
   font-family: 'helveticabold', sans-serif;
@@ -337,17 +341,16 @@ a.header-nav__item--link {
 .header-nav__list li:last-child a {
   padding-right: 0;
 }
-a.header-nav__item--link.active {
+.header-nav__item--link.active span{
   position: relative;
 }
-
-a.header-nav__item--link.active:before {
+.header-nav__item--link.active span::before {
   content: '';
-  width: 23%;
-  height: 1px;
+  width: 40px;
+  height: 2px;
   background: #000;
   position: absolute;
-  left: 0;
+  left: calc( -40px - 22%);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -555,4 +558,61 @@ h1.banner-inner__text {
 
 .portfolio-item-box__subtitle {
   font-family: 'helvetica',sans-serif;
+}
+
+/*----------------------------------------*/
+/*  07. Locations page CSS
+/*----------------------------------------*/
+.locations--wrapper {
+  max-width: 87%;
+}
+
+.locations--header .section-header__title {
+  text-align: left;
+}
+
+.location-tab {
+  margin-bottom: 75px;
+}
+
+.location-tab nav {
+  margin-bottom: 80px;
+}
+
+.location-tab .nav-link {
+  padding: 0 120px 0 0;
+  border: 0;
+  font-size: 30px;
+  font-family: 'helveticaneuebold',sans-serif;
+}
+
+.location-tab .nav-tabs {
+  border-bottom: none;
+}
+
+.location-tab .nav-link:focus, 
+.location-tab .nav-link:hover {
+  color: var(--theme-fourth-color);
+}
+
+.location-tab .nav-link.active {
+  position: relative;
+  color: var(--theme-primary-color) !important;
+}
+
+.location-tab .nav-link.active::before {
+  content: '';
+  width: 24%;
+  height: 2px;
+  background: #1a1b1d;
+  position: absolute;
+  left: calc( -24% - 7%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.location-list ul li a {
+  font-size: 19px;
+  margin-bottom: 25px;
+  display: inline-block;
 }
