@@ -686,6 +686,10 @@ h1.banner-inner__text {
   color: var(--theme-primary-color);
 }
 
+.message {
+  overflow: hidden;
+}
+
 .name:focus, 
 .email:focus, 
 .message:focus,
