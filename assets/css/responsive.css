@@ -14,7 +14,7 @@
 @media (max-width: 1200px) {
     /* about page */
     .section-header {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
     }
     
     .section-description,
@@ -27,7 +27,8 @@
         font-size: 25px;
     }
     
-    .email-contact__email {
+    .email-contact__email,
+    .contact-email {
         font-size: 50px;
     }
     
@@ -47,6 +48,35 @@
     .location-list ul li a {
         font-size: 18px;
         margin-bottom: 18px;
+    }
+    /* contact page */
+    .contact .main {
+        margin-bottom: 80px;
+    }
+    .contact-office {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .contact-phone {
+        font-size: 22px;
+    }
+    .contact-location {
+        font-size: 17px;
+        margin-bottom: 65px;
+    }
+    input.name::placeholder,
+    input.email::placeholder,
+    textarea.message::placeholder {
+        font-size: 17px !important;
+    }
+    
+    input.name::-moz-placeholder,
+    input.email::-moz-placeholder,
+    textarea.message::-moz-placeholder {
+        font-size: 17px !important;
+    }
+    .send {
+        padding: 15px 25px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -135,6 +165,21 @@
         font-size: 18px;
         padding: 0 75px 0 0;
     }
+    /* contact page */
+    .contact-header--title {
+        text-align: left;
+    }
+    input.name::placeholder,
+    input.email::placeholder,
+    textarea.message::placeholder {
+        font-size: 16px !important;
+    }
+    
+    input.name::-moz-placeholder,
+    input.email::-moz-placeholder,
+    textarea.message::-moz-placeholder {
+        font-size: 16px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -147,7 +192,8 @@
         margin-bottom: 30px;
     }
     
-    .email-contact__email {
+    .email-contact__email,
+    .contact-email {
         font-size: 25px;
     }
     
@@ -158,6 +204,10 @@
     /* portfolio page */
     .portfolio-item-box__title {
         font-size: 18px;
+    }
+    /* contact page */
+    .name, .email, .message {
+        margin-bottom: 15px;
     }
 }
 
@@ -207,5 +257,12 @@
     .location-list ul li a {
         font-size: 16px;
         margin-bottom: 15px;
+    }
+    /* contact page */
+    .contact-form {
+        position: relative;
+        padding: 0 15px;
+        width: 100%;
+        margin-top: 50px;
     }
 }
